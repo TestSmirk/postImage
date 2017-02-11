@@ -32,7 +32,7 @@ def getFiles(dir):
                 #     print(os.path.join(root, name))
 
 
-getFiles("/home/bzby/")
+getFiles("/home/testsmirk/Pictures/")
 
 # r = requests.post("http://192.168.1.217:8001/a/baseinfo",files={'head_image': open('pycharm.png','rb')},data={"_id":"5823d1954406b7368e2dd76c"})
 # print(r.text)
