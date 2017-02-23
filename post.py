@@ -26,11 +26,14 @@ def getFiles(dir):
         for name in files:
             if re.match('jpg|.png', name[-4:]):
                 print(root)
+
                 q = queue.Queue()
                 q.put(root + "/" + name)
                 upload_file(root + "/" + name)
                 #     print(os.path.join(root, name))
 
+def test():
+    print("")
 
 getFiles("/home/testsmirk/Pictures/")
 
