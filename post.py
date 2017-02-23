@@ -33,7 +33,7 @@ def getFiles(dir):
                 #     print(os.path.join(root, name))
 
 def test():
-    print("")
+    print("test")
 
 getFiles("/home/testsmirk/Pictures/")
 
