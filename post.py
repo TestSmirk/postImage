@@ -37,5 +37,16 @@ def test():
 
 getFiles("/home/testsmirk/Pictures/")
 
+
+def postChat(str):
+    r = requests.post("http://op.juhe.cn/robot/index",{
+        "key": "",  # 您申请到的本接口专用的APPKEY
+        "info":str ,  # 要发送给机器人的内容，不要超过30个字符
+
+    })
+    print(r.text)
+
+postChat("天气")
 # r = requests.post("http://192.168.1.217:8001/a/baseinfo",files={'head_image': open('pycharm.png','rb')},data={"_id":"5823d1954406b7368e2dd76c"})
 # print(r.text)
+
