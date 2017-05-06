@@ -1,8 +1,8 @@
-import threading
+import threading #线程.
 from concurrent.futures import thread
 import random
 
-import requests
+import requests#网络请求 requests.request
 import time
 
 
@@ -29,6 +29,7 @@ exitFlag = 0
 
 def testGet():
     url = "http://192.168.101.111:8001/a/new_home?category_name=1&user_id=5823d1954406b7368e2dd76c&limit=20&skip=0"
+
     print(requests.get(url).text)
     return requests.get(url).text
 
